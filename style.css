@@ -19,3 +19,21 @@ body {
    -moz-user-select: none; /* Firefox */
    -ms-user-select: none; /* Internet Explorer/Edge */
 }
+
+.container {
+    top: 1vh;
+    width: 40vw;
+    height: 40vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnShow {
+    margin: 1%;
+    width: 10vw;
+}
+
+.dispBlock {
+    display: none;
+}

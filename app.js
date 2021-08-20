@@ -19,15 +19,12 @@ async function fetchNames(apiUrl) {
 function populateDropdown(names) {
     var dropdown = document.getElementById("myDropdown");
     var select = document.getElementById("testSelect1");
-
-    select.attributes.mulitSelect = true;
     for (var name of names) {
         var option = document.createElement("option");
         option.value = name;
         option.text = name;
         select.appendChild(option);
     }
-
     document.getElementById("myDropdown").appendChild(select);
     document.multiselect('#testSelect1');
 }
@@ -87,4 +84,8 @@ function createChart() {
 
     ctx = document.getElementById("chart").getContext("2d");
     myLineChart = new Chart(ctx).Line(lineChartData);
+}
+
+function drawChart() {
+    
 }

@@ -12,15 +12,20 @@
 </head>
 
 <body>
-    <div id="container"></div>
-    <div class="dropdown">
-        <div id="myDropdown" class="dropdown-content">
-          <select id='testSelect1' multiple></select>
+    <div class="container">
+        <div class="dropdown">
+            <div id="myDropdown" class="dropdown-content">
+                <select id='testSelect1' multiple></select>
+            </div>
         </div>
-      </div>
+        <div class="containerShow">
+            <button class="btnShow" id="btnShow" onClick = "drawChart()">DRAW</button>
+        </div>
+    </div>
+
     <div class="dispBlock">
         <h1 class="disp-chart"></h1>
-        <canvas id = "chart" ></canvas>
+        <canvas id="chart"></canvas>
     </div>
     <!-- <script type="text/javaScript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script> -->
     <script type="text/javaScript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.1/Chart.min.js"></script>
