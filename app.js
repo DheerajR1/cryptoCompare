@@ -87,5 +87,5 @@ function createChart() {
 }
 
 function drawChart() {
-    
+    console.log(document.multiselect('#testSelect1').value);
 }
